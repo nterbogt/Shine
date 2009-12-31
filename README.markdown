@@ -8,9 +8,11 @@ Basic Usage
 -----------
 1. Unzip the installation folder into a non obvious directory on your web root directory.
 2. Create a database, and import the mysql.sql file from the Shine folder.
-3. Create a user in the 'users' table.
-4. Rename /includes/class.config.sample.php to /includes/class.config.php and modify to suit your server settings.
-5. Done, visit the webpage and login.
+3. Rename /includes/class.config.sample.php to /includes/class.config.php and modify to suit your server settings.
+4. Comment out line 3 in user-new.php '$Auth->requireAdmin('login.php');' -> '// $Auth->requireAdmin('login.php');'
+5. Visit http://<your.hostname>/user-new.php and create a new admin user.
+6. Uncomment line 3 in user-new.php '// $Auth->requireAdmin('login.php');' -> '$Auth->requireAdmin('login.php');'
+7. Done, visit the webpage and login.
 
 License
 -------
