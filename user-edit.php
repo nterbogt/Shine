@@ -55,7 +55,6 @@
     <meta http-equiv="Content-Type" content="text/html;charset=utf-8" >
     <link rel="stylesheet" href="http://yui.yahooapis.com/2.7.0/build/reset-fonts-grids/reset-fonts-grids.css" type="text/css">
     <link rel="stylesheet" href="css/yuiapp.css" type="text/css">
-    <script type="text/javascript" src="http://www.google.com/jsapi"></script>
 </head>
 <body class="rounded">
     <div id="doc3" class="yui-t6">
@@ -116,7 +115,7 @@
 					</div>
 					<div class="bd">
 						<ul class="biglist">
-							<li><a href="user-edit.php?id=<?PHP echo $u->id; ?>&amp;action=delete" id="delete">Delete user</a></li>
+							<li><a href="user-edit.php?id=<?PHP echo $u->id; ?>&amp;action=delete" id="delete" onclick="return confirm('Are you sure?');">Delete user</a></li>
 						</ul>
 					</div>
 				</div>

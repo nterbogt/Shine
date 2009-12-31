@@ -42,10 +42,9 @@
     <meta http-equiv="Content-Type" content="text/html;charset=utf-8" >
     <link rel="stylesheet" href="http://yui.yahooapis.com/2.7.0/build/reset-fonts-grids/reset-fonts-grids.css" type="text/css">
     <link rel="stylesheet" href="css/yuiapp.css" type="text/css">
-    <script type="text/javascript" src="http://www.google.com/jsapi"></script>
 </head>
 <body class="rounded">
-    <div id="doc3" class="yui-t6">
+    <div id="doc3" class="yui-t0">
 
         <div id="hd">
             <h1>Shine</h1>
@@ -70,9 +69,13 @@
             <div id="yui-main">
                 <div class="yui-b"><div class="yui-g">
 					<?PHP echo $Error; ?>
-                    <div class="block">
+                    <div class="block tabs spaces">
                         <div class="hd">
-                            <h2>Create new user</h2>
+<ul>
+<li><a href="users.php">Users</a></li>
+<li class="active"><a href="user-new.php">Create new user</a></li>
+</ul>
+<div class="clear"></div>
                         </div>
                         <div class="bd">
 							<form action="user-new.php" method="post">
@@ -89,9 +92,6 @@
 					</div>
               
                 </div></div>
-            </div>
-            <div id="sidebar" class="yui-b">
-
             </div>
         </div>
 
