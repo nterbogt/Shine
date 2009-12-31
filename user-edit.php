@@ -85,13 +85,12 @@
 					<?PHP echo $Error; ?>
                     <div class="block tabs spaces">
                         <div class="hd">
-                           <h2>Users</h2>
 <ul>
-<li class="active"><a href="users.php">Users</a></li>
+<li><a href="users.php">Users</a></li>
 <li><a href="user-new.php">Create new user</a></li>
+                            <li class="active"><a href="#">Edit <?PHP echo $u->username; ?></a></li>
 </ul>
 <div class="clear"></div>
-                            <h2>Create new user</h2>
                         </div>
                         <div class="bd">
 							<form action="user-edit.php?id=<?PHP echo $u->id; ?>" method="post">
@@ -111,6 +110,16 @@
                 </div></div>
             </div>
             <div id="sidebar" class="yui-b">
+				<div class="block">
+					<div class="hd">
+						<h3>User actions</h3>
+					</div>
+					<div class="bd">
+						<ul class="biglist">
+							<li><a href="user-edit.php?id=<?PHP echo $u->id; ?>&amp;action=delete" id="delete">Delete user</a></li>
+						</ul>
+					</div>
+				</div>
 
             </div>
         </div>
